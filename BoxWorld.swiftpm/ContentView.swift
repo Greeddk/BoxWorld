@@ -22,9 +22,6 @@ struct ContentView: View {
                                 Text("1번 글임돠nnnrqwerwqerqwerqweffkjkrqwer")
                                     .font(.body)
                                     .lineLimit(1)
-//                                    .onTapGesture {
-//                                       <#code#>
-//                                    }
                                 // 네비게이션 링크
                                 
                             } icon: {
