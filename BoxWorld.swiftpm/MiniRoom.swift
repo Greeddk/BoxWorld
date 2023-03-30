@@ -11,7 +11,7 @@ struct MiniRoom: View {
     var body: some View {
         
         
-        VStack(alignment: .leading, spacing: 0) {
+        ZStack {
             
             
             Image("miniroom2")

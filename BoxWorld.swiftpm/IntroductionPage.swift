@@ -10,29 +10,33 @@ import SwiftUI
 struct IntroductionPage: View {
     var body: some View {
         HStack(spacing: 35.31) {
-            Image("teamlogo")
-                .resizable()
-                .frame(width: 85, height: 180)
+            
+            Button(action: {print("Button1")}){
+                Image("teamlogo")
+                    .resizable()
+                    .frame(width: 105, height: 180)
+                        }
+            
                 
             
-            VStack {
-                Text("Team 11_빡스")
-                    .font(.mo(.regular, size: 24))
-                    .foregroundColor(Color.orange)
-                .frame(width: 160, height: 24, alignment: .leading)
+          
+                VStack {
+                    Text("Team 11_빡스")
+                        .font(.mo(.regular, size: 24))
+                        .foregroundColor(Color.orange)
+                        .frame(width: 530, height: 24, alignment: .leading)
+                    
+                    GroupBox(){
+                        Text("빡스팀ºl\nCBŁ과정ºl 추억을 담은\nㅁıLI홈ㅍıøłl 오신걸 환영합LI⊂ト!\n\n방ㄱr방ㄱr ㈛○l루\n(--)(__)(--)(__)")
+                            .font(.noto(.regular, size: 20))
+                            .foregroundColor(Color(hex: 0x49619F))
+                            .padding(10)
+                            .frame(width: 498.19, height: 200, alignment: .topLeading)
+                    }
                 
-                GroupBox(){
-                    Text("여기엔 소개가 들어가 친구들아")
-                        .font(.noto(.regular, size: 20))
-                        .foregroundColor(Color(hex: 0x49619F))
-                        .padding(10)
-                        .frame(width: 498.19, height: 210, alignment: .topLeading)
+                
                 }
-            
                 
-            }
-            
-            
         }
     }
 }
