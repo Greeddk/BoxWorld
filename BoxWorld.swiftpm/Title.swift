@@ -10,14 +10,22 @@ import SwiftUI
 struct Title: View {
     var body: some View {
         
-        VStack(alignment: .leading) {
+        HStack {
             RoundedRectangle(cornerRadius: 5)
-                .fill(Color.white)
+                .stroke(
+                    Color(red: 0.627, green: 0.627, blue: 0.627), lineWidth: 1)
                 .frame(width: 135, height: 50)
                 .overlay(
-                    RoundedRectangle(cornerRadius: 5.5)
-                        .stroke(Color(red: 0.627, green: 0.627, blue: 0.627), lineWidth: 1)
+                    Text("IFARM")
+                        .font(.mo(.regular, size: 30))
+                        .foregroundColor(Color.orange)
             )
+            Spacer()
+            
+            Text("빡스조의 깔깔대는 나날들")
+                .font(.mo(.regular, size: 30))
+                .foregroundColor(Color.orange)
+                
         }
     }
 }

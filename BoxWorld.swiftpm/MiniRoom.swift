@@ -14,7 +14,7 @@ struct MiniRoom: View {
         VStack(alignment: .leading, spacing: 0) {
             
             
-            Image("miniroom")
+            Image("miniroom2")
                 .resizable()
 
         }

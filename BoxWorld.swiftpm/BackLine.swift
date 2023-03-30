@@ -11,6 +11,12 @@ struct BackLine: View {
     var body: some View {
         
         ZStack {
+            
+            Image("background")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+            
             RoundedRectangle(cornerRadius: 7)
                 .stroke(
                     Color.white,

@@ -12,7 +12,7 @@ struct TeamInformation: View {
         
         
         VStack{
-            
+
             
             
             GeometryReader { geometry in
@@ -27,7 +27,10 @@ struct TeamInformation: View {
                         .frame(width: geometry.size.width, height:  geometry.size.height / 3*2)
                     }
                 
+                Spacer().frame(height: 40)
+                
                 Text("Team 빡스")
+                    .font(.mo(.regular))
                     
                 
               
@@ -38,6 +41,7 @@ struct TeamInformation: View {
             }//Geometry
             
         }
+        .foregroundColor(Color.black)
     }
 }
 
